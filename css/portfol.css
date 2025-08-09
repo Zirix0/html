@@ -1,0 +1,538 @@
+/* CSS for studio */
+
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   block-size: inherit;
+}
+
+
+
+
+
+:root {
+   --main-text-color: #FFFFFF;
+   --main-bg-color: #2E2F42;
+   --main-button-color: #4D5AE5;
+   --main-link-color: #2E2F42;
+}
+
+* {
+   outline: 2px solid tomato;
+   padding: 0;
+   margin: 0;
+   margin-inline-start: 0;
+   margin-inline-end: 0;
+   margin-block-start: 0;
+   margin-block-end: 0;
+}
+
+body {
+   margin: 0;
+   font-family: Roboto, sans-serif;
+   letter-spacing: 0.2px;
+}
+
+
+
+/* Наші переваги */
+.center {
+
+   max-width: 1128px;
+   margin: 0 auto;
+   width: 100%;
+
+}
+
+.features {
+   margin-left: 8px;
+}
+
+/* Герой сайта */
+.hero {
+   text-align: center;
+   color: var(--main-text-color);
+   background-color: var(--main-bg-color);
+
+}
+
+
+
+
+
+.hero .title {
+   margin: 0;
+   padding-left: 472px;
+   padding-right: 472px;
+   padding-top: 188px;
+   padding-bottom: 48px;
+   font-size: 56px;
+   line-height: 1;
+   font-weight: 700;
+}
+
+/* Чим ми займаємося */
+.mainphoto {
+   padding-left: 156px;
+   padding-right: 156px;
+   padding-bottom: 120px;
+}
+
+.mainphoto img {
+   margin-left: 24px;
+}
+
+.doing {}
+
+/* Загальна секція */
+.team {
+
+   background-color: #F4F4FD;
+   padding-top: 120px;
+   padding-bottom: 120px;
+   padding-left: 156px;
+   padding-right: 156px;
+}
+
+/* Контейнер для фігур */
+.team-members {
+   justify-content: space-between;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/* Картки */
+.text-under {
+   margin-inline-start: 0;
+   margin-inline-end: 0;
+   margin-block-start: 0;
+   margin-block-end: 0;
+   margin-left: 24px;
+
+
+   background-color: #FFFFFF;
+
+   text-align: center;
+}
+
+/* Фото */
+.our-photo {
+   border: 1px solid;
+   width: 264px;
+
+}
+
+
+
+/* нижня частина */
+.footer {
+
+
+
+
+   background-color: var(--main-bg-color);
+}
+
+/* нижня частина лого з текстом */
+.footer-text {
+   color: var(--main-text-color);
+   padding-left: 156px;
+   padding-top: 100px;
+
+   padding-bottom: 100px;
+}
+
+
+
+/* Стиль для кнопок */
+.hero .button {
+   font-size: 16px;
+   width: 169px;
+   height: 56px;
+
+   border: none;
+   border-radius: 4px;
+
+   color: var(--main-text-color);
+   background-color: var(--main-button-color);
+
+}
+
+.but {
+   padding-left: 635px;
+   padding-right: 635px;
+
+   padding-bottom: 188px;
+}
+
+.hero .button:hover {
+
+   transform: scale(1.1);
+   transition: 1s;
+
+}
+
+/* силки в нав */
+.link {
+   display: flex;
+   margin-left: 76px;
+   margin-top: 24px;
+   margin-bottom: 24px;
+   font-size: 17px;
+   font-family: 'Roboto';
+   font-weight: 500;
+   letter-spacing: 1px;
+
+}
+
+/* mail and phone */
+.contacts {
+   display: flex;
+   margin-top: 24px;
+   margin-left: 332px;
+   margin-right: 156px;
+   margin-bottom: 24px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+.mail {
+   margin-right: 40px;
+   text-decoration: none;
+   color: #434455;
+}
+
+.tel {
+   text-decoration: none;
+   color: #434455;
+}
+
+
+/* Студіо головний заголовок */
+
+
+.section-title {
+
+   text-align: center;
+   font-size: 36px;
+   line-height: 1;
+
+}
+
+.flex {}
+
+
+
+.team-name {
+
+
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+
+
+}
+
+.team-description {
+   width: 264px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+
+
+
+
+.link-color {
+   margin-left: 40px;
+   color: var(--main-link-color);
+   text-decoration: none;
+}
+
+.link-color:hover,
+.link-color:active,
+.link-color:focus {
+   color: var(--main-button-color);
+}
+
+.logo {
+   padding-left: 156px;
+   padding-top: 24px;
+}
+
+.main-logo {
+   margin-top: 24px;
+   margin-bottom: 24px;
+   margin-left: 156px;
+}
+
+
+
+
+
+
+
+.footer-media {
+   display: flex;
+   text-decoration: none;
+}
+
+.ul {}
+
+
+
+.social {
+
+   color: var(--main-text-color);
+   list-style: none;
+   margin-left: 120px;
+   padding-top: 70px;
+}
+
+.social ul {
+   padding: 0;
+   display: flex;
+   justify-content: center;
+
+}
+
+.media {
+   list-style: none;
+
+}
+
+.social a {
+   border-radius: 50%;
+}
+
+
+
+.social li:hover,
+.social li:focus,
+.social a:focus {
+   background-color: #31D0AA;
+}
+
+.social li {
+   background-color: #4D5AE5;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   margin-left: 16px;
+}
+
+.media img {
+   height: 24px;
+   width: 24px;
+   justify-content: center;
+}
+
+.media a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* header for stusio */
+
+.hed {
+
+   display: flex;
+   max-width: 1240px;
+   margin: 0 auto;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.img {
+   display: flex;
+}
+
+.nov {
+   margin-left: 76px;
+
+}
+
+.nov ul {
+
+   display: flex;
+   width: 261px;
+   height: 48px;
+   margin-top: 24px;
+   gap: 40px;
+   list-style: none;
+   font-size: 17px;
+   font-family: 'Roboto';
+   font-weight: 500;
+   letter-spacing: 1px;
+}
+
+.nov li {
+   position: relative;
+}
+
+.nov a {
+   text-decoration: none;
+}
+
+.nov li.active::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0px;
+   width: 100%;
+   height: 4px;
+   background: #404BBF;
+   border-radius: 2px;
+}
+
+.con {
+   display: flex;
+   column-gap: 40px;
+   margin-left: auto;
+}
+
+.te,
+.mai {
+   text-decoration: none;
+}
+
+
+/* end header for studio */
+
+/* header for portfolio */
+
+
+.heade {
+
+   padding: 0 15px;
+}
+
+.header__hed {
+   display: flex;
+   margin: 0 auto;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.header__img {
+   display: flex;
+}
+
+.header__nav {
+   margin-left: 76px;
+}
+
+.header__list {
+
+   display: flex;
+   min-width: 261px;
+   height: 48px;
+   padding: 24px 0px 0px 0px;
+   /* gap: 40px; */
+   font-size: 17px;
+   font-family: 'Roboto';
+   font-weight: 500;
+   letter-spacing: 1px;
+}
+
+.nav a {
+   text-decoration: none;
+}
+
+.nav li {
+   /* margin-right: 40px; */
+   position: relative;
+   list-style: none;
+}
+
+/* .nav li:last-child {
+   margin-right: 0;
+} */
+.space+.space {
+   margin-left: 40px;
+}
+
+.nav li:hover {
+
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+.nav li.active::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0px;
+   width: 100%;
+   height: 4px;
+   background: #404BBF;
+   border-radius: 2px;
+}
+
+.header__contacts {
+   display: flex;
+   column-gap: 40px;
+   margin-left: auto;
+
+}
+
+.te,
+.mai {
+   text-decoration: none;
+}
+
+/* end header for portfolio */
+/* portfolio flex photo */
+
+
+.portfolio {
+
+   display: flex;
+   flex-wrap: wrap;
+
+}
+
+.portfolio__figure {
+   margin-left: 24px;
+   margin-bottom: 48px;
+}
+
+
+.portfolio__figure:nth-child(3n + 1) {
+   margin-left: 0;
+}
+
+.portfolio__figure:nth-child(n+3) {
+   margin-bottom: 0;
+}
+
+.portfolio__img {
+   width: 360px;
+   height: 300px;
+}
+
+.portfolio__text {
+   text-align: left;
+}
+
+.portfolio__title {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+}
+
+.portfolio__main {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+}

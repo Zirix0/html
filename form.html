@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form </title>
+</head>
+
+<body>
+   <form action="#" method="get" enctype="multipart/form-data">
+      <p>Ім'я</p>
+      <input type="text">
+      <p>Пароль</p>
+      <input tabindex="1" placeholder="password" type="password">
+      <p>Телефон</p>
+      <input tabindex="2" placeholder="Phone number" type="tel">
+
+      <div>
+         <p>Пол</p>
+         <label>
+            <p><input tabindex="3" type="radio" name="sex">Мужской</p>
+         </label>
+         <label>
+            <p><input tabindex="3" type="radio" name="sex">Женский</p>
+         </label>
+      </div>
+
+      <div>
+         <p>Речі</p>
+         <label>
+            <p><input tabindex="4" checked type="checkbox">Велосипед</p>
+         </label>
+         <label>
+            <p><input tabindex="5" type="checkbox">Машина</p>
+         </label>
+         <label>
+            <p><input tabindex="6" disabled type="checkbox">Будинок</p>
+         </label>
+      </div>
+      <div>
+         <span>Доп інфа</span>
+         <br>
+         <textarea tabindex="7" name="поле"></textarea>
+
+      </div>
+      <div>
+         <p>photo</p>
+         <input tabindex="8" type="file">
+      </div>
+      <div>
+         <p>Your favorit color</p>
+         <select tabindex="9" name="color">
+            <option tabindex="10" value="Red">Червоний</option>
+            <option tabindex="11" value="yellow">Жовтий</option>
+            <option tabindex="12" value="black">Чорний</option>
+            <option tabindex="13" selected value="blue">Синій</option>
+
+         </select>
+      </div>
+      <div>
+         <p>Действие</p>
+         <button tabindex="14" type="submit">Send</button>
+         <button tabindex="15" type="reset">Очистить</button>
+
+      </div>
+   </form>
+</body>
+
+</html>
