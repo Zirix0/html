@@ -19,6 +19,7 @@ html {
    --main-bg-color: #2E2F42;
    --main-button-color: #4D5AE5;
    --main-link-color: #2E2F42;
+
 }
 
 * {
@@ -29,6 +30,9 @@ html {
    margin-inline-end: 0;
    margin-block-start: 0;
    margin-block-end: 0;
+   padding-block: 0px;
+   padding-inline: 0px;
+   border-width: 0px;
 }
 
 body {
@@ -40,6 +44,12 @@ body {
 
 
 /* Наші переваги */
+.features {
+   display: flex;
+   flex-direction: column;
+
+}
+
 .center {
 
    max-width: 1128px;
@@ -48,45 +58,131 @@ body {
 
 }
 
-.features {
-   margin-left: 8px;
+.features__flex {
+   display: flex;
+   justify-content: space-between;
+
+
 }
+
+.features__main {
+
+   width: 264px;
+
+}
+
+.features__bg {
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+   background-color: #F4F4FD;
+   height: 112px;
+}
+
+.features__photo {
+   display: block;
+
+   width: 64px;
+   height: 64px;
+   align-items: center;
+   background-color: #F4F4FD;
+
+
+}
+
+.main__title {}
+
+.main__description {}
+
+
 
 /* Герой сайта */
-.hero {
-   text-align: center;
+.section__hero {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    color: var(--main-text-color);
    background-color: var(--main-bg-color);
+   background-image: url('../Image/people-office1.jpg');
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   min-height: 600px;
+   overflow: hidden;
+   position: relative;
 
 }
 
+.section__hero::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: rgba(0, 0, 0, 0.4);
+   z-index: 1;
+}
+
+.hero__main {
+   position: relative;
+   z-index: 2;
+   text-align: center;
+}
 
 
-
-
-.hero .title {
-   margin: 0;
-   padding-left: 472px;
-   padding-right: 472px;
-   padding-top: 188px;
-   padding-bottom: 48px;
-   font-size: 56px;
-   line-height: 1;
+.hero__title {
+   font-family: 'Roboto', sans-serif;
+   margin-bottom: 48px;
+   width: 496px;
+   height: 120px;
    font-weight: 700;
+   font-size: 56px;
+   letter-spacing: 0.2px;
+   line-height: 1;
+}
+
+.hero__button {
+   border-radius: 4%;
+   background-color: var(--main-button-color);
+   color: var(--main-text-color);
+   padding: 16px 32px;
+}
+
+.hero__button:hover {
+   scale: 1.04;
+   transition: 1s;
+}
+
+.hero__text {
+   display: inline-block;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   letter-spacing: 0.04em;
+
 }
 
 /* Чим ми займаємося */
-.mainphoto {
-   padding-left: 156px;
-   padding-right: 156px;
-   padding-bottom: 120px;
+.description {
+
+   margin: 120px 0;
 }
 
-.mainphoto img {
-   margin-left: 24px;
+
+.description__title {
+   text-align: center;
+   margin-bottom: 72px;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 111%;
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+
 }
 
-.doing {}
+.description__photo {
+   margin-right: 19.5px;
+}
 
 /* Загальна секція */
 .team {
@@ -172,7 +268,7 @@ body {
 .hero .button:hover {
 
    transform: scale(1.1);
-   transition: 1s;
+
 
 }
 
