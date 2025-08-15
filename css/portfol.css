@@ -73,6 +73,12 @@ body {
    height: 112px;
 }
 
+.features1 {
+   background-image: url(../Image/features1.svg);
+   width: 64px;
+   height: 64px;
+}
+
 .features__photo {
    display: block;
 
@@ -83,6 +89,8 @@ body {
 
 
 }
+
+
 
 .main__title {}
 
@@ -214,12 +222,47 @@ body {
 
 .team__description {}
 
+.team__list {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+}
+
+.team__media {
+   position: relative;
+   margin-top: 8px;
+   margin-right: 24px;
+   border-radius: 50%;
+   background-color: #4D5AE5;
+   height: 40px;
+   width: 40px;
+
+}
+
+.team__media:last-child {
+   margin-right: 0;
+}
+
+.team__list-photo {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 16px;
+   height: 16px;
+
+}
+
+.team__media:hover {
+   background-color: #2E2F42;
+
+}
 
 .te,
 .mai {
    text-decoration: none;
-}
 
+}
 
 
 /* header for portfolio */
@@ -306,8 +349,24 @@ body {
 
 .te,
 .mai {
+   display: flex;
    text-decoration: none;
+   align-items: center;
+   color: #434455;
 }
+
+.te:hover,
+.mai:hover {
+   color: #404BBF;
+}
+
+.mai::before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   background-image: url(../Image/email.svg);
+}
+
 
 /* end header for portfolio */
 /* portfolio flex photo */
@@ -371,12 +430,19 @@ body {
    margin-bottom: 100px;
 }
 
-.footer__logo {}
+.footer__logo {
+   margin-bottom: 12px;
+}
 
 .footer__desctiption {
    width: 264px;
    height: 72px;
    color: #F4F4FD;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   letter-spacing: 0.02em;
+
 }
 
 .footer__social {
@@ -395,26 +461,101 @@ body {
 
 }
 
+.list__media:hover {
+   background-color: #31D0AA;
+}
+
 .list__media {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   position: relative;
    margin-right: 16px;
    border-radius: 50%;
    background-color: #4D5AE5;
-
    height: 40px;
    width: 40px;
+
 }
 
+
 .list__photo {
-   align-self: center;
-   align-content: center;
-   align-items: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    width: 24px;
    height: 24px;
+
 }
 
 .list__media:last-child {
    margin-right: 0;
+}
+
+.icon {
+   position: relative;
+   z-index: 4;
+   width: 24px;
+   height: 24px;
+}
+
+.footer__contacts {
+   display: flex;
+   flex-direction: column;
+   margin-top: 100px;
+   margin-bottom: 120px;
+   margin-left: 80px;
+}
+
+.contacts__text {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 150%;
+   letter-spacing: 0.02em;
+   color: #FFFFFF;
+   margin-bottom: 16px;
+
+}
+
+.contacts__flex {
+   display: flex;
+
+   width: 453px;
+
+}
+
+.input {
+
+   background-color: transparent;
+   color: #FFFFFF;
+   border: 1px solid #FFFFFF;
+   border-radius: 4px;
+   width: 264px;
+   height: 40px;
+   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+
+}
+
+.footer__button {
+
+   display: inline-flex;
+   width: 165px;
+   height: 40px;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 150%;
+   letter-spacing: 0.04em;
+   text-align: center;
+   background-color: #4D5AE5;
+   color: #FFFFFF;
+   justify-content: center;
+   align-items: center;
+   margin-left: 24px;
+}
+
+.footer__button::after {
+   content: "";
+   width: 24px;
+   height: 24px;
+   margin-left: 16px;
+   background-image: url(../Image/telegram.svg);
 }
