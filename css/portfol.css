@@ -264,6 +264,68 @@ body {
 
 }
 
+.customers {}
+
+.customers__title {
+   text-align: center;
+}
+
+.customers__list {
+   display: flex;
+   list-style: none;
+
+
+   height: 88px;
+}
+
+
+
+.customers__photo:last-child {
+   margin-right: 0;
+}
+
+.customers__photo {
+   background-position: center;
+
+   margin-right: 24px;
+   background-repeat: no-repeat;
+}
+
+.customers1 {
+
+   width: 168px;
+   background-image: url(../Image/customers1.svg);
+}
+
+.customers2 {
+
+   width: 168px;
+   background-image: url(../Image/customers2.svg);
+}
+
+.customers3 {
+
+   width: 168px;
+   background-image: url(../Image/customers3.svg);
+}
+
+.customers4 {
+
+   width: 168px;
+   background-image: url(../Image/customers4.svg);
+}
+
+.customers5 {
+
+   width: 168px;
+   background-image: url(../Image/customers5.svg);
+}
+
+.customers6 {
+
+   width: 168px;
+   background-image: url(../Image/customers6.svg);
+}
 
 /* header for portfolio */
 
@@ -288,6 +350,8 @@ body {
 .header__img {
    display: flex;
 }
+
+.header__logo {}
 
 .header__nav {
    margin-left: 76px;
@@ -558,4 +622,13 @@ body {
    height: 24px;
    margin-left: 16px;
    background-image: url(../Image/telegram.svg);
+
+}
+
+.sds {
+   fill: red;
+}
+
+.sds:hover {
+   fill: #31D0AA;
 }
